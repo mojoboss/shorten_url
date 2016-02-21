@@ -9,21 +9,18 @@ User stories:
 </ul>
 
 <h3>Example usage:</h3>
-        <p>https://urlshortener-mojoboss.c9users.io/new/http://www.flipkart.com/home-entertainment/televisions/vu~brand/pr?p[]=facets.resolution%255B%255D%3DUltra%2BHD%2B%25284K%2529&sid=ckf%2Cczl&filterNone=true&otracker=hp_mod_offersectionone_row_2_bn_middle</p><br>
-        <h3>Example output:</h3>
-        <p>
-            {
-            "originalUrl":<br>
-            "http://www.flipkart.com/home-entertainment/televisions/vu~brand/pr?p[]=facets.resolution%255B%255D%3DUltra%2BHD%2B%25284K%2529&sid=ckf%2Cczl&filterNone=true&otracker=hp_mod_offersectionone_row_2_bn_middle",<br>
-
-            "shortenedUrl":<br>
-            "https://urlshortener-mojoboss.c9users.io/zNxmT58"
-            }
-        </p>
-
-        <h3>Usage:</h3>
-        <p>
-            https://urlshortener-mojoboss.c9users.io/zNxmT58
-        </p>
-        <h4>will redirect to</h4>
-        <p>http://www.flipkart.com/home-entertainment/televisions/vu~brand/pr?p[]=facets.resolution%255B%255D%3DUltra%2BHD%2B%25284K%2529&sid=ckf%2Cczl&filterNone=true&otracker=hp_mod_offersectionone_row_2_bn_middle</p>
+<a>https://urlshortener-mojoboss.c9users.io/new/http://www.flipkart.com/home-entertainment/televisions/vu~brand/pr?p[]=facets.resolution%255B%255D%3DUltra%2BHD%2B%25284K%2529&sid=ckf%2Cczl&filterNone=true&otracker=hp_mod_offersectionone_row_2_bn_middle</a>
+<br>
+<h3>Example output:</h3>
+{
+"originalUrl":
+"http://www.flipkart.com/home-entertainment/televisions/vu~brand/pr?p[]=facets.resolution%255B%255D%3DUltra%2BHD%2B%25284K%2529&sid=ckf%2Cczl&filterNone=true&otracker=hp_mod_offersectionone_row_2_bn_middle",
+"shortenedUrl":
+"https://urlshortener-mojoboss.c9users.io/zNxmT58"
+}
+<h3>Usage:</h3>
+<a>
+https://urlshortener-mojoboss.c9users.io/zNxmT58
+</a>
+<h4>will redirect to</h4>
+<a>http://www.flipkart.com/home-entertainment/televisions/vu~brand/pr?p[]=facets.resolution%255B%255D%3DUltra%2BHD%2B%25284K%2529&sid=ckf%2Cczl&filterNone=true&otracker=hp_mod_offersectionone_row_2_bn_middle</a>
