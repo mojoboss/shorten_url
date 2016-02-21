@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<!--Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<h1 class="header" style="color:red;">
+                URL shortner Microservice
+        </h1>
+
+        <blockquote>
+                User stories:
+                <ul>
+                <li>1)  Pass a URL as a parameter and you will receive a shortened URL in the JSON response.<br>
+                        <em>(https://urlshortener-mojoboss.c9users.io/new/YOUR_LONG_URL)</em>
+                </li>
+                <li>2)  When you visit that shortened URL, it will redirect you to your original link.</li>
+                </ul>
+        </blockquote>
+        <h3>Example usage:</h3>
+        <code>https://urlshortener-mojoboss.c9users.io/new/http://www.flipkart.com/home-entertainment/televisions/vu~brand/pr?p[]=facets.resolution%255B%255D%3DUltra%2BHD%2B%25284K%2529&sid=ckf%2Cczl&filterNone=true&otracker=hp_mod_offersectionone_row_2_bn_middle</code><br>
+        <h3>Example output:</h3>
+        <code>
+            {
+            "originalUrl":<br>
+            "http://www.flipkart.com/home-entertainment/televisions/vu~brand/pr?p[]=facets.resolution%255B%255D%3DUltra%2BHD%2B%25284K%2529&sid=ckf%2Cczl&filterNone=true&otracker=hp_mod_offersectionone_row_2_bn_middle",<br>
+
+            "shortenedUrl":<br>
+            "https://urlshortener-mojoboss.c9users.io/zNxmT58"
+            }
+        </code>
+
+        <h3>Usage:</h3>
+        <code>
+            https://urlshortener-mojoboss.c9users.io/zNxmT58
+        </code>
+        <h4>will redirect to</h4>
+        <code>http://www.flipkart.com/home-entertainment/televisions/vu~brand/pr?p[]=facets.resolution%255B%255D%3DUltra%2BHD%2B%25284K%2529&sid=ckf%2Cczl&filterNone=true&otracker=hp_mod_offersectionone_row_2_bn_middle</code>
+	</div>
+</body>
+</html>

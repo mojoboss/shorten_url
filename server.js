@@ -98,6 +98,7 @@ function findAll(){
 }
 
 var app = express();
+app.use(express.static("public/"));
 app.get("/new/:url*", function(req, res){         
 	var bigUrl = req.url;
 	bigUrl = bigUrl.slice(5);
@@ -109,6 +110,12 @@ app.get("/:short", function(req, res){
 	var shortUrl = req.params.short;
 	//console.log(shortUrl);
 	findShortUrl(shortUrl, res);
+});
+
+app.get("/", function(req, res){
+	req.statusCode = 200;
+	res.setHeader("Content-Type", "text/html");
+	res.render("index.html");
 });
 
 app.listen(port);
