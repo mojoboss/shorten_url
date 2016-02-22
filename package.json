@@ -4,7 +4,8 @@
   "description": "A url shortening api. Returns a shortened url in json format.",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js"
+    "test": "node server.js",
+    "start": "node server.js"
   },
   "keywords": [
     "urlShortener"
@@ -13,6 +14,16 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.13.4",
-    "mongoose": "^4.4.4"
-  }
+    "mongoose": "^4.4.4",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mojoboss/shorten_url.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mojoboss/shorten_url/issues"
+  },
+  "homepage": "https://github.com/mojoboss/shorten_url#readme"
 }

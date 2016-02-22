@@ -15,6 +15,7 @@ Api for URL shortening.
 */
 var express = require("express");
 var mongoose = require("mongoose");
+var validUrl = require("valid-url")
 var con = require("./base_converter.js"); //this has a function changeBase(int) which returns corresponding base62
 
 var port = process.env.PORT || 8000;      //port where app runs
@@ -102,7 +103,13 @@ app.use(express.static("public/"));
 app.get("/new/:url*", function(req, res){         
 	var bigUrl = req.url;
 	bigUrl = bigUrl.slice(5);
-	findBigUrl(bigUrl, res);
+	if(validUrl.isUri(bigUrl)){
+		findBigUrl(bigUrl, res);
+	} 
+	else{
+    	res.send("INVALID URL");
+	}
+	
 	//console.log("hit", bigUrl);
 });
 
